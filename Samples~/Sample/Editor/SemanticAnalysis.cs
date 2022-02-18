@@ -17,7 +17,7 @@ public class SemanticAnalysis : MonoBehaviour
     [MenuItem("Tools/Test Roslyn Samples/Semantic Analysis")]
     static void Test()
     {
-        SyntaxTree tree = CSharpSyntaxTree.ParseText(
+        var tree = CSharpSyntaxTree.ParseText(
 @" using System;
 using System.Collections.Generic;
 using System.Text;

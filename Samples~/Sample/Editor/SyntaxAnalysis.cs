@@ -17,7 +17,7 @@ public class SyntaxAnalysis : MonoBehaviour
     [MenuItem("Tools/Test Roslyn Samples/Syntax Analysis")]
     static void Test()
     {
-        SyntaxTree tree = CSharpSyntaxTree.ParseText(
+        var tree = CSharpSyntaxTree.ParseText(
 @"using System;
 using System.Collections.Generic;
 using System.Linq;

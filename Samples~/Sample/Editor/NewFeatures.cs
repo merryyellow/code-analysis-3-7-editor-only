@@ -15,7 +15,7 @@ public class NewFeatures : MonoBehaviour
     [MenuItem("Tools/Test Roslyn Samples/New Language Feature")]
     static void Test()
     {
-        SyntaxTree tree = CSharpSyntaxTree.ParseText(
+        var tree = CSharpSyntaxTree.ParseText(
 @"using System;
  
 namespace TopLevel
